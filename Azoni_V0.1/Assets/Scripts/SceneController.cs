@@ -9,6 +9,8 @@ public class SceneController : MonoBehaviour
     [SerializeField] Animator transition;
     [SerializeField] GameObject sceneLoader;
     [SerializeField] Slider slider;
+    [SerializeField] BasicSaveManager bsm;
+    [SerializeField] SettingsManager sm;
 
     //go to an scene by its name
     public void GoToScene(string scene) {
@@ -24,6 +26,14 @@ public class SceneController : MonoBehaviour
     public void GoToSceneAs(int scene) {
         //call the IEnumerator function
         StartCoroutine(LoadAsynchronously(scene));
+        //set the saved volume in the 3 volume sliders
+        string[] volumeParameter = sm.volumeParameter;
+        for (int i = 0; i < volumeParameter.Length; i++)
+        {
+            sm.SetSliderValue(bsm.GetVolumeData(volumeParameter[i]), volumeParameter[i]);
+
+        }
+        
     }
 
     //Reload the current scene

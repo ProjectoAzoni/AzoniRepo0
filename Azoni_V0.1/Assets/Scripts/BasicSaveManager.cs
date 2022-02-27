@@ -25,10 +25,19 @@ public class BasicSaveManager : MonoBehaviour
             PlayerPrefs.SetInt("level" + level, numEstrellas);
         }
     }
+    //Save the volume value of the MainVolume/MusicVolume/EffectsVolume
+    public void SetVolumeData(string volumeParameter, float value) {
+        PlayerPrefs.SetFloat(volumeParameter, value);
+    }
+
 
     //Get the number of stars per level if any
     public int GetLevelData(int level) {
         return PlayerPrefs.GetInt("level"+level);
+    }
+    //Get the saved volume value of the MainVolume/MusicVolume/EffectsVolume
+    public float GetVolumeData(string volumeParameter) {
+        return PlayerPrefs.GetFloat(volumeParameter);
     }
     //Delete the info in the level named keyName
     public void DeleteKey(string keyName) {
