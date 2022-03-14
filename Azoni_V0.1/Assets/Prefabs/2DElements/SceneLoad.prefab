@@ -59,7 +59,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &8086267483622659908
 MonoBehaviour:
@@ -613,7 +613,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &1754121570039292694
 MonoBehaviour:
@@ -1194,9 +1194,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 3608522503963433448}
+  lvl0Animator:
+  - {fileID: 5263338615466995237, guid: ec05732432230684ea078c36646d06f9, type: 3}
+  - {fileID: 8124843622427583726, guid: d17f90a2f3529c7418b8a690913efdcf, type: 3}
   sceneLoader: {fileID: 2954118042550870150}
   slider: {fileID: 677295341206693635}
-  bsm: {fileID: 0}
+  bsm: {fileID: 8006845381158114572}
   sm: {fileID: 0}
 --- !u!114 &8006845381158114572
 MonoBehaviour:
