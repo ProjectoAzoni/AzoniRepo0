@@ -13,6 +13,7 @@ public class TutorialDoorOpenerHandeler : MonoBehaviour
         ActivateAnimationDoor0();
         CheckFirstZone();
         CheckSecondZone();
+        CheckThirdZone();
     }
 
     public void ActivateAnimationDoor0() {

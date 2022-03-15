@@ -91,7 +91,7 @@ public class CustomBullet : MonoBehaviour
             Explode();
             print("enemy");
         }
-        else if (collision.gameObject.tag == "Ambient")
+        else if (collision.gameObject.tag == "Enviroment")
         {
             Explode();
             print("ambient");
